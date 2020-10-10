@@ -5,5 +5,5 @@
  * @returns {number}
  */
 function sum(m, n) {
-  // ваш код...
+  return (m != null && n != null && !isNaN(m) && !isNaN(n)) ? m + n : 0;
 }
