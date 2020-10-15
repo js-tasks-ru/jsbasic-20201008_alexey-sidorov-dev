@@ -4,5 +4,11 @@
  * @returns {boolean}
  */
 function checkSpam(str) {
-  // ваш код...
+  if (str == null || str == '') {
+    return false;
+  }
+  
+  str = str.toLowerCase();
+
+  return /1xbet/g.test(str) || /xxx/g.test(str)
 }
