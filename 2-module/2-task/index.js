@@ -4,5 +4,9 @@
  * @returns {Boolean}
  */
 function isEmpty(obj) {
-  // ваш код...
+  if (obj == null) {
+    return true;
+  }
+
+  return Object.keys(obj).length == 0;
 }

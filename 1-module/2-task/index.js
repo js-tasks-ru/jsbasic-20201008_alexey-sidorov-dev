@@ -19,14 +19,8 @@ function isValid(name) {
     return false;
   }
   
-  //у пользователя в имени есть пробел
-  for (let i = 0; i < len; i++) {
-    if (arr[i] == ' ') {
-        return false;
-    }
-  }
-
-  return true;
+  //у пользователя в имени есть пробе
+  return !name.includes(' ');
 
 }
 
