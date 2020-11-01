@@ -5,5 +5,11 @@
  * @returns {string}
  */
 function showSalary(users, age) {
-  // ваш код...
+  let result = '';
+  // ищем пользователей по условию и собираем строку вывода
+  for (item of users) {
+    result += (item.age <= age) ? `\n${item.name}, ${item.balance}` : ``;
+  }
+  // удаляем первый символ перевода строки, если строка не равна пустой строке
+  return (result !== '') ? result.slice(1, result.length) : result;
 }

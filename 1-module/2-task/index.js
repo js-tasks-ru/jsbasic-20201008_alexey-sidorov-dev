@@ -10,12 +10,9 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
-  // преобразуем имя пользователя в массив символов
-  let arr = Array.from(name || '');
-  let len = arr.length;
 
   // у пользователя пустое имя или длина имени меньше 4 символов
-  if (name == null || name == '' || len < 4) {
+  if (name == null || name == '' || name.length < 4) {
     return false;
   }
   
